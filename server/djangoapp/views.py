@@ -114,6 +114,27 @@ def get_dealer_details(request,dealer_id):
         # Return a list of dealer short name
         return HttpResponse(review_names)
 # Create a `add_review` view to submit a review
-# def add_review(request, dealer_id):
-# ...
+def add_review(request, dealer_id):
+    if User.is_authenticated:
+        review = dict()
+        url = "https://us-south.functions.appdomain.cloud/api/v1/web/903010a5-2507-4494-b4e8-9a4ceaf552fe/api/review_doc"
+        '''
+        review['name'] = request.name
+        review["id"] = request.id
+        review["dealership"] = dealer_id
+        review["review"] = request.review
+        review["purchase"] = request.purchase
+        review["purchase_date"]= datetime.utcnow().isoformat()
+        review["car_make"] = request.car_make
+        review["car_model"] = request.car_model
+        review["car_year"] = request.car_year
+        '''
+        review['name'] = "heilan"
+        json_payload = dict()
+        json_payload["review"] = review
+        post_request(url,json_payload)
+        return HttpResponse("successfully")
+    else:
+        return render(request, 'djangoapp/registration.html', {})
+
 
