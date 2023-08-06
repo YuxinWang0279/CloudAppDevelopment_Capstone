@@ -96,7 +96,7 @@ def registration_request(request):
 def get_dealerships(request):
     context = {}
     if request.method == "GET":
-        url = "https://us-south.functions.appdomain.cloud/api/v1/web/903010a5-2507-4494-b4e8-9a4ceaf552fe/api/dealship"
+        url = ""
         dealerships = get_dealers_from_cf(url)
         dealer_names = ' '.join([dealer.short_name for dealer in dealerships])
         # Return a list of dealer short name
@@ -107,7 +107,7 @@ def get_dealerships(request):
 def get_dealer_details(request,dealer_id):
     context = {}
     if request.method == "GET":
-        url = "https://us-south.functions.appdomain.cloud/api/v1/web/903010a5-2507-4494-b4e8-9a4ceaf552fe/api/reviews"
+        url = ""
         review = get_dealer_reviews_from_cf(url,dealer_id)
         # Return a list of dealer short name
         review_names = ' '.join([dealer.name for dealer in review])
@@ -117,7 +117,7 @@ def get_dealer_details(request,dealer_id):
 def add_review(request, dealer_id):
     if User.is_authenticated:
         review = dict()
-        url = "https://us-south.functions.appdomain.cloud/api/v1/web/903010a5-2507-4494-b4e8-9a4ceaf552fe/api/review_doc"
+        url = ""
         '''
         review['name'] = request.name
         review["id"] = request.id
