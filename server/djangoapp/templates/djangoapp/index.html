@@ -35,6 +35,7 @@
                         <a class="nav nav-link" href="contact/">Contact Us</a>
                     </li>
                 </ul>
+                <pre> </pre>
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -75,7 +76,7 @@
             {% for dealer in dealership_list %}
                 <tr>
                     <td>{{dealer.id}}</td>
-                    <td><a href="{% url 'djangoapp:dealer_detail' dealer.id %}">{{dealer.full_name}}</a></td>
+                    <td><a href="{% url 'djangoapp:dealer_detail' dealer_id=dealer.id dealer_name=dealer.full_name %}">{{dealer.full_name}}</a></td>
                     <td>{{dealer.city}}</td>
                     <td>{{dealer.address}}</td>
                     <td>{{dealer.zip}}</td>
