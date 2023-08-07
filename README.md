@@ -1,33 +1,15 @@
 # Car Dealership Manangement Website
 
-## Results
+## Results(Part)
+#### Index page
+![index](https://github.com/YuxinWang0279/CloudAppDevelopment_Capstone/assets/110021928/70441e0e-6957-41e3-9fcc-8123429fd414)
+#### Admin page
+![admin](https://github.com/YuxinWang0279/CloudAppDevelopment_Capstone/assets/110021928/c17e1b50-99aa-4686-9f26-3d5766448f09)
 
 ## Features
 * IBM **Cloudant** Service, **NLU** service
 * Action/Sequence of IBM **Cloud Functions**, generate **Endpoint**
-* Python
-  * **Requests** Library
-  * 
-**Fork the project Github repository with a project then build and deploy the template project**
-1. Fork the repository in your account
-2. Clone the repository in the theia lab environment
-3. Create static pages to finish the user stories
-4. Deploy the application on IBM Cloud
+* Python **Requests** Library
+* **Django** Web Framework, Django Admin Management
+* Frontend: Bootstrap, HTML, JS
 
-**Add user management to the application**
-1. Implement user management using the Django user authentication system.
-2. Set up continuous integration and delivery
-
-**Implement backend services**
-1. Create cloud functions to manage dealers and reviews
-2. Create Django models and views to manage car model and car make
-3. Create Django proxy services and views to integrate dealers, reviews, and cars together
- 
-**Add dynamic pages with Django templates**
-1. Create a page that shows all the dealers
-2. Create a page that show reviews for a selected dealer
-3. Create a page that let's the end user add a review for a selected dealer
-
-**Containerize your application**
-1. Add deployment artifacts to your application
-2. Deploy your application
