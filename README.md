@@ -3,9 +3,11 @@
 ## Results
 
 ## Features
-* IBM **Cloudant** Service to manage data
-* Using the Action/Sequence feature of the **IBM Cloud Functions** to interact with Database
-* 
+* IBM **Cloudant** Service, **NLU** service
+* Action/Sequence of IBM **Cloud Functions**, generate **Endpoint**
+* Python
+  * **Requests** Library
+  * 
 **Fork the project Github repository with a project then build and deploy the template project**
 1. Fork the repository in your account
 2. Clone the repository in the theia lab environment
